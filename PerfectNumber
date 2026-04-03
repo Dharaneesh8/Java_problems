@@ -1,0 +1,34 @@
+concept:
+if n=6 their divisors are 1,2,3 if we add those divisor we get same as input number
+example 2:
+n=28 thier diviors are 1,2,4,7,14 we get the sum =28
+
+n==sum then it is perfect number.
+
+
+
+
+
+import java.util.*;
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner s=new Scanner(System.in);
+		int n=s.nextInt();
+		int sum=0;
+		int i=1;
+		while(i<=n/2){
+		    if(n%i==0){
+		        sum+=i;
+		    }
+		    i++;
+		}
+		if(sum==n && n!=0){
+		    System.out.println("perfect number");
+		}
+		else{
+		    System.out.println("not a perfect number");
+		}
+		
+	}
+}
