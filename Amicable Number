@@ -1,3 +1,19 @@
+//Consider two numbers 220 and 284.
+Proper divisors of 220 = 1, 2, 4, 5, 10, 11, 20, 22, 44, 55, 110.
+Their sum = 284.
+Proper divisors of 284 = 1, 2, 4, 71, 142.
+Their sum = 220.
+
+sum of divisor of 220 = 284 
+sum of divisor of 284 = 220
+Thus, 220 and 284 are amicable numbers.
+
+
+
+
+
+
+
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
