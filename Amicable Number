@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter the first number:");
+        int a=s.nextInt();
+        System.out.println("Enter the second number:");
+        int b=s.nextInt();
+        
+        if(a<1 || b<1){
+            System.out.println("It should be in natural number");
+            return;
+        }
+        
+        int s1=Amicable(a);
+        int s2=Amicable(b);
+        
+        if(s1==b && s2==a){
+            System.out.println("It is amicable number");
+        }
+        else{
+            System.out.println("It is not amicable number");
+        }
+    }
+    
+    public static int Amicable(int n){
+        int sum=0;
+        for(int i=1;i<=n/2;i++){
+            if(n%i==0){
+                sum+=i;
+            }
+        }
+        return sum;
+    }
+}
